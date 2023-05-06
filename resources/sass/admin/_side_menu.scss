@@ -1,0 +1,28 @@
+.sidebar-wrap{
+    flex: 0 0 auto;
+    width: 14%;
+    background-color: #343131;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    height: 100%;
+}
+
+ul.side-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.side-list > li{
+    line-height: 1.5;
+}
+ul.side-list > li > a{
+    display: block;
+    line-height: 1.5;
+    color:#fff;
+    padding: 8px 18px;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+ul.side-list > li > a:hover{
+    background-color: #838383;
+}

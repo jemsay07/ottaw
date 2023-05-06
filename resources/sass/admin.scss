@@ -1,0 +1,39 @@
+/**
+ * Sytem Name: Ottawa4d
+ *
+ * Description: This is the main style for the admin
+ *
+ * Author: Jem Sayre
+ *
+ */
+ /**
+ * ======================================================================
+ * =========================	Table-of-contents	=====================
+ * ======================================================================
+ * # Variable
+ * # Mixins
+ * # Header Navigation
+ * # Side Navigation
+ * # Main
+ * # Media Query
+
+/**==========Variables==========*/
+@import 'variables';
+
+/**==========Mixins==========*/
+@import 'mixins';
+
+/**==========Mixins==========*/
+@import 'tools';
+
+/**==========Header Navigation==========*/
+@import 'admin/header_menu';
+
+/**==========Side Navigation==========*/
+@import 'admin/side_menu';
+
+/**==========Main==========*/
+@import 'admin/main';
+
+/**==========Media=========*/
+@import 'admin/media';

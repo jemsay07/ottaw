@@ -1,0 +1,131 @@
+/**
+ * Sytem Name: Ottawa4d
+ *
+ * Description: This is the main style for the admin
+ *
+ * Author: Jem Sayre
+ *
+ */
+/**
+ * ======================================================================
+ * =========================	Table-of-contents	=====================
+ * ======================================================================
+ * # Variable
+ * # Mixins
+ * # Header Navigation
+ * # Side Navigation
+ * # Main
+ * # Media Query
+
+/**==========Variables==========*/
+/**==========Mixins==========*/
+/**==========Mixins==========*/
+/**==========Keyframes==========*/
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+/**==========tools==========*/
+.overflow-y-none .loader-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.loader-wrap {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  transition: display 0.5s ease;
+  top: 0;
+  z-index: 9999;
+}
+
+.spinner {
+  margin: 0px auto 0;
+  width: 70px;
+  text-align: center;
+}
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #020202;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+/**==========Header Navigation==========*/
+/**Logo*/
+.logo {
+  width: 105px;
+}
+
+/**==========Side Navigation==========*/
+.sidebar-wrap {
+  flex: 0 0 auto;
+  width: 14%;
+  background-color: #343131;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 100%;
+}
+
+ul.side-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.side-list > li {
+  line-height: 1.5;
+}
+
+ul.side-list > li > a {
+  display: block;
+  line-height: 1.5;
+  color: #fff;
+  padding: 8px 18px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+ul.side-list > li > a:hover {
+  background-color: #838383;
+}
+
+/**==========Main==========*/
+/*Wrapper*/
+.loggedin-wrap {
+  background-color: #f5f5f5;
+  height: 100vh;
+}
+
+.ottawa-wrap {
+  flex: 0 0 auto;
+  width: 86%;
+}
+
+/**==========Media=========*/
